@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ConfigureAwaitChecker.Analyzer" Version="5.0.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers" Version="17.9.28">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationRegistry.DomainModels\ApplicationRegistry.DomainModels.csproj" />
+    <ProjectReference Include="..\ApplicationRegistry.Interfaces\ApplicationRegistry.Interfaces.csproj" />
+    <ProjectReference Include="..\ApplicationRegistry.Model\ApplicationRegistry.Model.csproj" />
+    <ProjectReference Include="..\Common.DAL\Common.DAL.csproj" />
+    <ProjectReference Include="..\Common.Extensions\Common.Extensions.csproj" />
+    <ProjectReference Include="..\Common.Repository\Common.Repository.csproj" />
+    <ProjectReference Include="..\LogInstance\LogInstance.csproj" />
+  </ItemGroup>
+
+</Project>
